@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vacas</h1>
+        <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
+        <button>
+            <a href="#formulario">Comprar</a>
+        </button>
+    </header>
+    <main>
+        <section class="texto">
+            <h2>Lorem ipsum</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor diam at pellentesque laoreet. Sed dapibus sem tellus, non efficitur orci molestie mollis. Morbi venenatis gravida ex, eu pharetra urna volutpat at. Curabitur eget faucibus magna. Integer a justo ligula.</p>
+                <p>Nam purus nisl, blandit eget iaculis at, interdum et nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa. Nulla lobortis.</p>
+                <p>Nam purus nisl, blandit eget iaculis at, interdum et nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa. Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci nec erat cursus cursus. Integer bibendum lacus molestie metus iaculis, ac hendrerit diam ullamcorper. Mauris placerat arcu pellentesque imperdiet pellentesque.</p>    
+            </article>
+        </section>
+        <section class="vacas">
+            <article>
+                <img src="estilo/imagenes/Rectangle 3.png" alt="Vaca 1">
+                <h2>Vaca 1</h2>
+                <p>Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci nec erat cursus cursus</p>
+                <button><a href="#">Comprar</a></button>
+            </article>
+            <article>
+                <img src="estilo/imagenes/Rectangle 4.png" alt="Vaca 2">
+                <h2>Vaca 2</h2>
+                <p>Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci nec erat cursus cursus</p>
+                <button><a href="#">Comprar</a></button>
+            </article>
+            <article>
+                <img src="estilo/imagenes/Rectangle 6.png" alt="Vaca 3">
+                <h2>Vaca 3</h2>
+                <p>Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci nec erat cursus cursus</p>
+                <button><a href="#">Comprar</a></button>
+            </article>
+        </section>
+        <form action="#" method="POST">
+            <h2>Lorem ipsum dolor sit amet, consequentur limites sulivan.</h2>
+            <section class="datos">
+                <fieldset class="nombre">
+                    <label for="nome">Nome e apelidos</label>
+                    <input type="text" id="nome">
+                </fieldset>
+                <fieldset class="direccion">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion">
+                </fieldset>
+                <fieldset>
+                    <label for="provincia">Provincia</label>
+                    <input type="text" list="provincias" id="provincia" name="provincia">
+                    <datalist id="provincias">
+                        <option value="A Coruña"></option>
+                        <option value="Lugo"></option>
+                        <option value="Ourense"></option>
+                        <option value="Pontevedra"></option>
+                    </datalist>
+                </fieldset>
+            </section>
+            <fieldset class="comentarios">
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </fieldset>
+            <fieldset class="newsletter">
+                <label for="newsletter">Recibir Newsletter?</label>
+                <input id="newsletter" name="newsletter" type="checkbox" value="si">
+            </fieldset>
+            <section class="enviar">
+                <input type="submit" value="Enviar">
+            </section>
+        </form>
+    </main>
+</body>
+</html>

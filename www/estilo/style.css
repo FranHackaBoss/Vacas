@@ -108,6 +108,7 @@ main section.vacas article button {
 }
 
 main section.vacas article button a {
+    display: block;
     text-decoration: none;
     color: #000;
     font-weight: 900;
@@ -132,8 +133,15 @@ form fieldset label {
     display: block;
 }
 
-form fieldset input, form textarea {
+form fieldset input,
+form fieldset select, 
+form textarea {
     background-color: #F2994A;
+}
+
+form fieldset select {
+    height: 2rem;
+    width: 11.5rem;
 }
 
 form textarea {
@@ -168,7 +176,12 @@ form section.enviar [type="submit"] {
         margin: 1rem;
     }
 
-    form section.datos input {
+    form {
+        font-size: 1.5rem;
+    }
+
+    form section.datos input,
+    form section.datos select {
         width: 50%;
         height: 3rem;
     }
@@ -200,6 +213,11 @@ form section.enviar [type="submit"] {
 }
 
 @media (min-width: 1200px) {
+
+    header ul li {
+        display: inline-block;
+    }
+
     header ul li,
     header button {
         font-size: 1.5rem;
@@ -257,8 +275,13 @@ form section.enviar [type="submit"] {
         flex-wrap: wrap;
     }
 
-    main form section.datos fieldset input{
+    main form section.datos fieldset input,
+    main form section.datos fieldset select {
         width: 35rem;
+    }
+
+    main form fieldset.comentarios {
+        margin-right: 6rem;
     }
 
     main form section.enviar [type="submit"] {
